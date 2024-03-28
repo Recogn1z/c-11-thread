@@ -1,4 +1,5 @@
 ## 2024/3/28
 ### create the thread `thread thread1(func);` 
 ### `join()` can wait thread to finish the process
-  
+### `detach()` the main thread can end with the additional threads run in the background
+### `joinable()` to judge if this thread can use detach or join 
