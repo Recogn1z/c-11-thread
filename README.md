@@ -19,3 +19,8 @@
 ### If multiple threads access a memory at the same time and at least one thread overwrites the variable, a data race problem will occur.
 
 ### `mutex` to resolve the problem mentioned above, `mutex mtx` to create, and use `mtx.lock()` to lock it which means after locked, another threads cannot acess to this memeory until `mtx.unlock()`
+
+
+## 2024/4/2
+`lock_guard` can auto use constructor to lock thread and use destructor to unlock thread after finish
+`unique_lock` offer more options like defer lock
