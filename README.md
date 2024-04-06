@@ -20,7 +20,14 @@
 
 ### `mutex` to resolve the problem mentioned above, `mutex mtx` to create, and use `mtx.lock()` to lock it which means after locked, another threads cannot acess to this memeory until `mtx.unlock()`
 
-
 ## 2024/4/2
-`lock_guard` can auto use constructor to lock thread and use destructor to unlock thread after finish
-`unique_lock` offer more options like defer lock
+
+### `lock_guard` can auto use constructor to lock thread and use destructor to unlock thread after finish
+
+### `unique_lock` offer more options like defer lock
+
+## 2024/4/5
+
+### update singleton with lazy and eager in singleton.cpp to achieve Log
+
+### use `condition_valraible` to achieve producer and consumer model
